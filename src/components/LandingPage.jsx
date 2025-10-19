@@ -1,10 +1,14 @@
 import React from 'react'
 import Card from './Card'
 import { motion } from "framer-motion";
+import { useStoreContext } from '../contextApi/contextApi';
 
 const LandingPage = () => {
 
     let desc = "Generated short links quickly"
+    const {token} = useStoreContext();
+    console.log("Token from LandingPage - " + token)
+    
 
   return (
     <div className="min-h-[calc(100vh-64px)]  lg:px-14 sm:px-8 px-4">
