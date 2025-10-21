@@ -1,10 +1,12 @@
 import { useQuery } from "@tanstack/react-query"
+import api from "../api/api"
 
 export const useFetchTotalClicks = (token, onError) => {
-    return useQuery("url-totalclick",
-         async () => {
+    return useQuery({
+        queryKey: ["url-totalclick"],
+        queryFn: async () => {
             return await api.get(
-                "/api/urls/totalClicks?startDate=2024-12-01&endDate=2024-12-07",
+                "/api/urls/totalClicks?startDate=2024-12-01&endDate=2025-10-15",
                 {
                     headers: {
 
@@ -14,18 +16,19 @@ export const useFetchTotalClicks = (token, onError) => {
                     },
                 }
             );
-         },
-          {
-            select: (data) => {
-                const convertToArray = Object.keys(data.data).map((key) => ({
-                    clickDate: key,
-                    count: data.data[key],
-                }));
+        },
+        select: (data) => {
+            // Assumes the API response structure is like { data: { "2024-10-01": 5, "2024-10-02": 10, ... } }
+            const convertToArray = Object.keys(data.data).map((key) => ({
+                clickDate: key,
+                count: data.data[key],
+            }));
 
-                return convertToArray;
-            },
-            onError,
-            staleTime: 5000
-          }
-        );
+            return convertToArray;
+        },
+        
+        onError: onError, 
+        staleTime: 5000,
+          
+    });
 };
