@@ -3,9 +3,11 @@ import Graph from './Graph'
 import { dummyData } from '../../dummyData/data'
 import { useStoreContext } from '../../contextApi/contextApi'
 import { useFetchTotalClicks } from '../../hooks/useQuery'
+import ShortenPopUp from './ShortenPopUp'
 
 const DashboardLayout = () => {
 
+  const refetch = false;
     const { token } = useStoreContext();
     const [shortenPopUp, setShortenPopUp] = useState(false);
 
@@ -40,7 +42,7 @@ const DashboardLayout = () => {
                    </div>
                 )}
 
-                <Graph graphData={totalClicks}/>
+            <Graph graphData={totalClicks}/>
             </div>
             <div className='py-5 sm:text-end text-center'>
                 <button
@@ -52,6 +54,11 @@ const DashboardLayout = () => {
             <div></div>
         </div>
         )}
+
+        <ShortenPopUp
+        refetch= {refetch}
+        open = {shortenPopUp}
+        setOpen={setShortenPopUp}/>
     </div>
   )
 }
