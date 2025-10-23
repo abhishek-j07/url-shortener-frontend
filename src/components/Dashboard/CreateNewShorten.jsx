@@ -53,8 +53,9 @@ const CreateNewShorten = ({ setOpen, refetch }) => {
             message: "Please copy the Short URL created.",
         });
 
-          reset();
-          setOpen(false);
+        //await refetch()
+        reset();
+        setOpen(false);
     } catch (error) {
         toast.error("Create ShortURL Failed");
     } finally {
