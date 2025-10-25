@@ -53,7 +53,7 @@ const CreateNewShorten = ({ setOpen, refetch }) => {
             message: "Please copy the Short URL created.",
         });
 
-        //await refetch()
+        await refetch();
         reset();
         setOpen(false);
     } catch (error) {
