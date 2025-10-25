@@ -45,3 +45,32 @@ The application is built on modern web technologies with a focus on developer ex
 	b. Emotion	11.14.0	CSS-in-JS styling for Material UI
 
 	c. Tailwind CSS	3.4.18	Utility-first CSS framework
+
+
+
+**- SCREENSHOTS**
+
+<img width="800" height="773" alt="Screenshot 2025-10-25 at 10 33 57 PM" src="https://github.com/user-attachments/assets/6bf6c30a-e96d-4341-b5f6-b88f4c2fb831" />
+
+
+<img width="800" height="741" alt="Screenshot 2025-10-25 at 10 34 59 PM" src="https://github.com/user-attachments/assets/1348e568-e551-46ae-99f2-969d4f6bbe52" />
+
+
+<img width="800" height="748" alt="Screenshot 2025-10-25 at 10 35 26 PM" src="https://github.com/user-attachments/assets/dc12cbe2-02dd-4d4c-b001-ae96a2721cfc" />
+
+
+<img width="800" height="775" alt="Screenshot 2025-10-25 at 10 35 45 PM" src="https://github.com/user-attachments/assets/b59920ec-1a68-4e8d-9bbb-8f90e5934e6b" />
+
+
+<img width="800" height="790" alt="Screenshot 2025-10-25 at 10 36 35 PM" src="https://github.com/user-attachments/assets/87c6997b-85b7-49f3-93b4-3465e92559f9" />
+
+
+<img width="800" height="826" alt="Screenshot 2025-10-25 at 10 37 04 PM" src="https://github.com/user-attachments/assets/09192dbe-a663-41e3-a986-41122738de82" />
+
+
+<img width="800" height="802" alt="Screenshot 2025-10-25 at 10 37 30 PM" src="https://github.com/user-attachments/assets/dfc05426-0421-4d80-b2e5-7178141663fe" />
+
+
+
+
+
