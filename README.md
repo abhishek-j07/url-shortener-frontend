@@ -1,16 +1,47 @@
-# React + Vite
+# URL SHORTENER FRONTEND APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The URL Shortener Frontend is a React-based web application that provides users with the ability to create, manage, and track shortened URLs. The application offers:
 
-Currently, two official plugins are available:
+1. URL Shortening: Convert long URLs into short, shareable links
+2. User Authentication: Secure user accounts with JWT-based authentication
+3. Dashboard Interface: Manage and view all shortened URLs in one place
+4. Analytics Tracking: Monitor click counts and access patterns for each shortened URL
+5. Data Visualization: View analytics through interactive charts and graphs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application communicates with a backend API service (url-shortener-backend) to persist data and handle URL redirection.
 
-## React Compiler
+**- Technology Stack**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application is built on modern web technologies with a focus on developer experience, performance, and maintainability.
 
-## Expanding the ESLint configuration
+1. Core Framework and Build System
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+	a. React	19.1.1	UI library for component-based development
+
+	b. React DOM	19.1.1	Browser rendering layer for React components
+
+	c. Vite	7.1.7	Build tool
+
+3. Routing and Navigation
+
+	a. React Router DOM	7.9.4	Client-side routing and navigation
+
+4. State Management
+
+	a. TanStack React Query	5.90.5	Server state caching and data fetching
+
+	b. React Context API	(built-in)	Global authentication state management
+
+	c. React Hook Form	7.65.0	Form state management and validation
+
+6. HTTP and API Communication
+
+	a. Axios	1.12.2	HTTP client for backend API requests
+
+7. UI Framework and Styling
+
+	a. Material UI	7.3.4	Pre-built React component library
+
+	b. Emotion	11.14.0	CSS-in-JS styling for Material UI
+
+	c. Tailwind CSS	3.4.18	Utility-first CSS framework
