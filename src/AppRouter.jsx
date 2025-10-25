@@ -43,7 +43,7 @@ export const SubDomainRouter = () => {
 
     return (
      <Routes>
-      <Route path="/s/:url" element={<ShortenUrlPage/>}/>
+      <Route path="/:url" element={<ShortenUrlPage/>}/>
     </Routes>
     );
 }
