@@ -6,7 +6,7 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 import { IoCopy } from 'react-icons/io5';
 import { LiaCheckSolid } from 'react-icons/lia';
 import api from '../../api/api';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useStoreContext } from '../../contextApi/contextApi';
 import { Hourglass } from 'react-loader-spinner';
 import Graph from './Graph';
@@ -79,8 +79,8 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
             <Link
               target='_'
               className='text-[17px]  font-montserrat font-[600] text-linkColor'
-              to={import.meta.env.VITE_REACT_SUBDOMAIN + "/s/" + `${shortUrl}`}>
-                  {subDomain + "/s/" + `${shortUrl}`}
+              to={import.meta.env.VITE_REACT_SUBDOMAIN + "/" + `${shortUrl}`}>
+                  {subDomain + "/" + `${shortUrl}`}
             </Link>
              <FaExternalLinkAlt className="text-linkColor" />
         </div>
